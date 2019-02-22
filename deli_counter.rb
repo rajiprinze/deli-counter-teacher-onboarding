@@ -4,7 +4,7 @@ katz_deli = []
 
 def line(current_line)
   if(current_line.size > 0)
-    current_line.each do |person, index|
+    current_line.each_with_index do do |person, index|
       puts "The line is currently: #{index}. #{person}"
     end
   else
